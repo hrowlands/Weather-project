@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <title>Weather</title>
+  </head>
+  <body>
+    <h1>Weather</h1>
+    <div class="container main">
+      <form id="searchForm">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter City Name"
+            aria-label="City Name"
+            aria-describedby="basic-addon2"
+            id="cityinput"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-3">
+          <div class="weathernow">🌤</div>
+        </div> 
+        <div class="col-9">
+          <div class="city" id="city">City Name</div> 
+          <div class="time" id="time">time</div> 
+          <div class="tempnow" id="temperature">0c</div>
+          <div class="humidity" id="humidity">0%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container week">
+      <div class="row">
+        <div class="col">
+          <div class="day">Monday</div>
+          <div class="temp">18c</div>
+        </div>
+        <div class="col">
+          <div class="day">Tuesday</div>
+          <div class="temp">19c</div>
+        </div>
+        <div class="col">
+          <div class="day">Wednesday</div>
+          <div class="temp">20c</div>
+        </div>
+        <div class="col">
+          <div class="day">Thursday</div>
+          <div class="temp">21c</div>
+        </div>
+        <div class="col">
+          <div class="day">Friday</div>
+          <div class="temp">22c</div>
+        </div>
+        <div class="col">
+          <div class="day">Saturday</div>
+          <div class="temp">23c</div>
+        </div>
+        <div class="col">
+          <div class="day">Sunday</div>
+          <div class="temp">24c</div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
